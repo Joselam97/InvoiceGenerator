@@ -20,7 +20,7 @@ public class ProductoServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         req.setAttribute("factura", factura);
-        req.setAttribute("title", "Ejemplo Factura con Inyeccion de Dependencia");
+        req.setAttribute("title", "Facturacion");
 
         getServletContext().getRequestDispatcher("/factura.jsp").forward(req,resp);
     }
