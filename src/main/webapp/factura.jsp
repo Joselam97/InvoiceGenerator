@@ -24,6 +24,7 @@
             </tr>
         </thead>
         <tbody>
+            <c:set var="totalFactura" value="0" />
             <c:forEach items="${factura.lineas}" var="linea">
                 <tr>
                     <td>${linea.producto.nombre}</td>
@@ -31,7 +32,16 @@
                     <td>${linea.cantidad}</td>
                     <td style="background-color: #2a9d8f; color: #fff; font-family: 'Roboto', sans-serif;">${linea.calcularImporte()}</td>
                 </tr>
+                <!-- Sumar el importe de cada línea al total -->
+                <c:set var="totalFactura" value="${totalFactura + linea.calcularImporte()}" />
             </c:forEach>
+            <!-- Fila para el total general -->
+            <tr>
+                <td colspan="3" style="text-align: right; font-weight: bold; font-family: 'Poppins', sans-serif;">Total Factura:</td>
+                <td style="background-color: #2a9d8f; color: #fff; font-family: 'Roboto', sans-serif; font-weight: bold;">
+                    ${totalFactura}
+                </td>
+            </tr>
         </tbody>
     </table>
 </div>
