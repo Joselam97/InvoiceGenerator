@@ -22,7 +22,7 @@ A web application built with Java and Jakarta EE that generates and manages invo
 ## 🚀 Installation
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Joselam97/BillingSystem.git
+   git clone https://github.com/Joselam97/InvoiceGenerator.git
 
 2. **Navigate to the project directory**:
    ```bash
