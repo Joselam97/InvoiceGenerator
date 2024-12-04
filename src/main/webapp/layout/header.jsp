@@ -12,8 +12,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
+
 <body style="font-family: 'Roboto', sans-serif;">
     <div class="container mb-4">
+
+    <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg" style="background-color: #1d3557; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); padding: 1rem;">
             <div class="container-fluid justify-content-center">
                 <a class="navbar-brand" href="#" style="font-family: 'Poppins', sans-serif; font-size: 1.8em; font-weight: 600; color: #fff; text-transform: uppercase; letter-spacing: 1px;">

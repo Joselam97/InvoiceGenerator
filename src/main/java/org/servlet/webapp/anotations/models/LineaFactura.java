@@ -26,7 +26,8 @@ public class LineaFactura {
         this.cantidad = cantidad;
     }
 
+    // This method calculates the total amount for this product line (quantity * price of the product)
     public Integer calcularImporte() {
-        return cantidad * producto.getPrecio();
+        return cantidad * producto.getPrecio(); // Calls the 'getPrecio()' method of Producto to get the price
     }
 }
